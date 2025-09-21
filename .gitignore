@@ -1,0 +1,19 @@
+# local .terrform dir
+.terraform
+
+
+# local tfstate files
+*.tfstate
+*.tfstate.backup 
+
+# terraform vars files, may include sensitive data
+*.tfvars
+*.tfvars.json
+
+# keys files
+*.pem
+*.key
+*.pub
+
+#script files
+*.sh
