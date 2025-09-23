@@ -1,16 +1,29 @@
-# local .terrform dir
-.terraform
+# Local .terraform directories
+.terraform/
+.terraform.lock.hcl
 
-
-# local tfstate files
+# Terraform state files
 *.tfstate
-*.tfstate.backup 
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
 
-# terraform vars files, may include sensitive data
+# Terraform plan output
+*.tfplan
+
+# Sensitive variable files
 *.tfvars
 *.tfvars.json
 
-# keys files
+# Keys and credentials
 *.pem
 *.key
 *.pub
+
+# OS junk files
+.DS_Store
+Thumbs.db
